@@ -1,0 +1,25 @@
+{
+  "name": "msgraph-msal-obo-nodejs",
+  "version": "1.0.0",
+  "description": "Simple nodeJS app implementing the MS Graph OAuth 2.0 On-Behalf-Of (OBO) flow using MSAL Node.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdngmnks/msgraph-msal-obo-nodejs.git"
+  },
+  "author": "codingmonkeys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdngmnks/msgraph-msal-obo-nodejs/issues"
+  },
+  "homepage": "https://github.com/cdngmnks/msgraph-msal-obo-nodejs#readme",
+  "dependencies": {
+    "@azure/msal-node": "^1.3.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^2.0.4"
+  }
+}
