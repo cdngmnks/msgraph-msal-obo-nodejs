@@ -13,7 +13,7 @@ const config = {
 };
 
 const validateJwt = (req, res, next) => {
-    const token = req.headers.authorization;
+    const token = req.headers.authorization.split(" ")[1];
 
     if (token) {
 
@@ -51,7 +51,7 @@ const app = express();
 const server_port = 3000;
 
 app.get('/auth', validateJwt, (req, res) => {
-    const authHeader = req.headers.authorization;
+    const authHeader = req.headers.authorization.split(" ")[1];
 
     const oboRequest = {
         oboAssertion: authHeader,
